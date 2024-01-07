@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Skill, Person
+from .models import Skill, Person ,ContactUs
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
 
@@ -16,3 +16,4 @@ class ExtendedUserAdmin(UserAdmin):
 admin.site.unregister(User)
 admin.site.register(User, ExtendedUserAdmin)
 admin.site.register(Skill)
+admin.site.register(ContactUs)

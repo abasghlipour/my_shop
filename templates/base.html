@@ -38,9 +38,75 @@
     <button id="color-switcher" class="btn btn-round btn-outline hover-anim hover-secondary color-switcher"
             type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
 </div>
-{% block content %}
-
-{% endblock %}
+<section id="main" class="main">
+    <div class="main__content fullheight">
+        <div class="container-fluid p-0 fullheight">
+            <div class="row g-0 fullheight">
+                <div class="col-12 col-xl-6 main__intro fullheight">
+                    <div class="intro__header d-flex justify-content-between">
+                        <div class="header__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="130px" height="60px" viewbox="0 0 130 60"
+                                 fill="currentColor">
+                                <path id="caption" fill="currentColor"
+                                      d="M75.7,39.6V20.2h3.5v8.1h4v-8.1h3.5v19.4h-3.5v-8.8h-4v8.8H75.7z M90.4,39.6V20.2h8.2v2.5h-4.6 v5.6h3.6v2.5h-3.6v6.4h4.7v2.4H90.4z M101.2,39.6V20.2h3.6v17h4.7v2.4H101.2z M112,39.6V20.2h3.5v19.4H112z M124.4,39.9 c-1.4,0-2.5-0.3-3.3-0.8c-0.8-0.5-1.4-1.2-1.8-2.2c-0.4-1-0.5-2.1-0.5-3.4v-7.3c0-1.3,0.2-2.4,0.5-3.4c0.4-0.9,0.9-1.7,1.8-2.1 s1.9-0.7,3.3-0.7c1.4,0,2.5,0.2,3.3,0.7c0.8,0.5,1.4,1.2,1.8,2.1c0.4,0.9,0.5,2.1,0.5,3.4v7.3c0,1.3-0.2,2.4-0.5,3.4 c-0.4,1-0.9,1.7-1.8,2.2C126.9,39.6,125.8,39.9,124.4,39.9z M124.4,37.2c0.6,0,1-0.1,1.3-0.4s0.5-0.6,0.6-1.1 c0.1-0.4,0.1-0.9,0.1-1.5v-9c0-0.5,0-1-0.1-1.5c-0.1-0.4-0.3-0.8-0.6-1s-0.7-0.4-1.3-0.4c-0.6,0-1,0.1-1.3,0.4 c-0.3,0.2-0.5,0.6-0.6,1c-0.1,0.4-0.1,0.9-0.1,1.5v9c0,0.5,0,1,0.1,1.5s0.3,0.8,0.6,1.1C123.4,37.1,123.8,37.2,124.4,37.2z"></path>
+                                <path id="logo" fill="currentColor"
+                                      d="M60,24.5c-0.8-1.1-1.5-2.2-1.8-3.3 c-0.4-1.2-0.4-2.5-0.5-3.9c-0.1-2-0.2-4.1-1.3-5.7c-1.2-1.6-3.1-2.3-5-3c-1.3-0.5-2.5-0.9-3.5-1.6c-0.9-0.7-1.8-1.7-2.6-2.8 c-1.3-1.6-2.6-3.3-4.5-3.9C39-0.3,37,0.2,35,0.8c-1.3,0.4-2.7,0.7-3.9,0.7s-2.6-0.4-3.9-0.7c-1.9-0.5-3.9-1.1-5.7-0.5 c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3c-1.1,1.6-1.2,3.7-1.3,5.7 C4.4,18.6,4.4,20,4,21.2c-0.4,1.1-1.1,2.2-1.8,3.3C1,26.2-0.2,28-0.2,30c0,2,1.2,3.8,2.3,5.5c0.8,1.1,1.5,2.2,1.8,3.3 c0.4,1.2,0.4,2.5,0.5,3.9c0.1,2,0.2,4.1,1.3,5.7c1.2,1.6,3.1,2.3,5,3c1.3,0.5,2.5,0.9,3.5,1.6c0.9,0.7,1.8,1.7,2.6,2.8 c1.3,1.6,2.6,3.3,4.5,3.9c0.6,0.2,1.1,0.3,1.7,0.3c1.3,0,2.7-0.4,4-0.8c1.3-0.4,2.7-0.7,3.9-0.7s2.6,0.4,3.9,0.7 c1.9,0.5,3.9,1.1,5.7,0.5c1.9-0.6,3.2-2.3,4.5-3.9c0.9-1.1,1.7-2.1,2.6-2.8c1-0.7,2.2-1.2,3.5-1.6c1.9-0.7,3.9-1.4,5-3 c1.1-1.6,1.2-3.7,1.3-5.7c0.1-1.3,0.1-2.7,0.5-3.9c0.4-1.1,1.1-2.2,1.8-3.3c1.1-1.7,2.3-3.5,2.3-5.5C62.4,28,61.2,26.2,60,24.5z M56.3,13.8C56.3,13.8,56.3,13.9,56.3,13.8C56.3,13.9,56.2,13.8,56.3,13.8C56.2,13.8,56.2,13.8,56.3,13.8z M55.6,12.2 c0.1,0.1,0.1,0.2,0.2,0.3c-0.1,0-0.1,0-0.2-0.1c-0.8-0.3-1.5-0.6-2.2-0.9c-0.4-0.5-0.9-1.1-1.4-1.6C53.5,10.5,54.8,11.1,55.6,12.2z M6.6,47.8c-1-1.3-1-3.2-1.1-5.1c-0.1-1.4-0.1-2.9-0.5-4.2C4.6,37.3,3.8,36.1,3,35c-1.1-1.6-2.2-3.2-2.2-5S2,26.6,3,25 c0.8-1.1,1.5-2.3,1.9-3.5c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8 c1.1-0.8,2-1.9,2.8-3c1.2-1.6,2.4-3,4-3.5C22.2,1.1,22.7,1,23.2,1c1.2,0,2.4,0.4,3.8,0.7c1.4,0.4,2.8,0.8,4.2,0.8s2.8-0.4,4.2-0.8 c1.9-0.5,3.6-1,5.2-0.5c1.3,0.4,2.3,1.4,3.2,2.6c-1.5-0.1-3,0.3-4.5,0.7c-1.3,0.4-2.7,0.7-3.9,0.7S32.7,5,31.4,4.6 c-1.9-0.5-3.9-1.1-5.7-0.5c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3 c-1.1,1.6-1.2,3.7-1.3,5.7c-0.1,1.3-0.1,2.7-0.5,3.9c-0.4,1.1-1.1,2.2-1.8,3.3C5.2,30,4,31.8,4,33.8c0,2,1.2,3.8,2.3,5.5 c0.8,1.1,1.5,2.2,1.8,3.3c0.4,1.2,0.4,2.5,0.5,3.9c0,1,0.1,2,0.3,3C8,49.1,7.2,48.5,6.6,47.8z M11.2,50.4c-0.4-0.1-0.8-0.3-1.1-0.4 c-0.3-1.1-0.3-2.3-0.4-3.5c-0.1-1.4-0.1-2.9-0.5-4.2c-0.4-1.2-1.2-2.4-1.9-3.5c-1.1-1.6-2.2-3.2-2.2-5c0-1.7,1.1-3.4,2.2-5 c0.8-1.1,1.5-2.3,1.9-3.5c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8 c1.1-0.8,2-1.9,2.8-3c1.2-1.6,2.4-3,4-3.5c0.4-0.1,0.9-0.2,1.4-0.2c1.2,0,2.4,0.4,3.8,0.7c1.4,0.4,2.8,0.8,4.2,0.8 c1.4,0,2.8-0.4,4.2-0.8c1.9-0.5,3.6-1,5.2-0.5c0,0,0.1,0,0.1,0c0,0-0.1-0.1-0.1-0.1c0.8,1,1.6,2,2.6,2.7c-1.3,0-2.5,0.4-3.8,0.7 c-1.3,0.4-2.7,0.7-3.9,0.7s-2.6-0.4-3.9-0.7c-1.9-0.5-3.9-1.1-5.7-0.5c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8 c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3C13,20.9,12.9,23,12.8,25c-0.1,1.3-0.1,2.7-0.5,3.9c-0.4,1.1-1.1,2.2-1.8,3.3 c-1.1,1.7-2.3,3.5-2.3,5.5c0,2,1.2,3.8,2.3,5.5c0.8,1.1,1.5,2.2,1.8,3.3c0.4,1.2,0.4,2.5,0.5,3.9c0,0.2,0,0.5,0,0.7 C12.3,50.9,11.8,50.6,11.2,50.4z M15,52.2c-0.3-0.2-0.7-0.4-1-0.6c0,0,0,0,0,0c0-0.4-0.1-0.8-0.1-1.3c-0.1-1.4-0.1-2.9-0.5-4.2 c-0.4-1.2-1.2-2.4-1.9-3.5c-1.1-1.6-2.2-3.2-2.2-5c0-1.7,1.1-3.4,2.2-5c0.8-1.1,1.5-2.3,1.9-3.5c0.4-1.3,0.5-2.7,0.5-4.2 c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8c1.1-0.8,2-1.9,2.8-3c1.2-1.6,2.4-3,4-3.5 c0.4-0.1,0.9-0.2,1.4-0.2c1.2,0,2.4,0.4,3.8,0.7c1.4,0.4,2.8,0.8,4.2,0.8c1.4,0,2.8-0.4,4.2-0.8c1.9-0.5,3.6-1,5.2-0.5 c0,0,0.1,0,0.1,0c0.7,0.9,1.5,1.9,2.4,2.6c-1.2,0-2.5,0.4-3.8,0.7c-1.3,0.4-2.7,0.7-3.9,0.7s-2.6-0.4-3.9-0.7 c-1.9-0.5-3.9-1.1-5.7-0.5c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3 c-1.1,1.6-1.2,3.7-1.3,5.7c-0.1,1.3-0.1,2.7-0.5,3.9c-0.4,1.1-1.1,2.2-1.8,3.3c-1.1,1.7-2.3,3.5-2.3,5.5c0,2,1.2,3.8,2.3,5.5 c0.8,1.1,1.5,2.2,1.8,3.3c0.4,1.2,0.4,2.5,0.5,3.9c0,0,0,0,0,0C16.4,53.5,15.7,52.8,15,52.2z M19.1,56.1c-0.3-0.2-0.7-0.4-1-0.6 c0-0.4,0-0.8-0.1-1.3c-0.1-1.4-0.1-2.9-0.5-4.2c-0.4-1.2-1.2-2.4-1.9-3.5c-1.1-1.6-2.2-3.2-2.2-5s1.1-3.4,2.2-5 c0.8-1.1,1.5-2.3,1.9-3.5c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8 c1.1-0.8,2-1.9,2.8-3c1.2-1.6,2.4-3,4-3.5c0.4-0.1,0.9-0.2,1.4-0.2c1.2,0,2.4,0.4,3.8,0.7c1.4,0.4,2.8,0.8,4.2,0.8s2.8-0.4,4.2-0.8 c1.9-0.5,3.6-1,5.2-0.5c0,0,0.1,0,0.1,0c0.7,0.9,1.5,1.9,2.4,2.6c-1.2,0-2.5,0.4-3.8,0.7c-1.3,0.4-2.7,0.7-3.9,0.7s-2.6-0.4-3.9-0.7 c-1.9-0.5-3.9-1.1-5.7-0.5c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3 c-1.1,1.6-1.2,3.7-1.3,5.7c-0.1,1.3-0.1,2.7-0.5,3.9c-0.4,1.1-1.1,2.2-1.8,3.3c-1.1,1.7-2.3,3.5-2.3,5.5c0,2,1.2,3.8,2.3,5.5 c0.8,1.1,1.5,2.2,1.8,3.3c0.4,1.2,0.4,2.5,0.5,3.9c0,0,0,0,0,0C20.5,57.3,19.9,56.6,19.1,56.1z M22.2,58.9c0-0.3,0-0.6,0-0.9 c-0.1-1.4-0.1-2.9-0.5-4.2c-0.4-1.2-1.2-2.4-1.9-3.5c-1.1-1.6-2.2-3.2-2.2-5c0-1.7,1.1-3.4,2.2-5c0.8-1.1,1.5-2.3,1.9-3.5 c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8c1.1-0.8,2-1.9,2.8-3 c1.2-1.6,2.4-3,4-3.5c0.4-0.1,0.9-0.2,1.4-0.2c1.2,0,2.4,0.4,3.8,0.7c1.4,0.4,2.8,0.8,4.2,0.8c1.4,0,2.8-0.4,4.2-0.8 c1.7-0.5,3.3-0.9,4.7-0.6c0,0.3,0,0.6,0,0.9c0,0.8,0.1,1.5,0.2,2.3c-0.3,0.1-0.7,0.2-1,0.3c-1.3,0.4-2.7,0.7-3.9,0.7 s-2.6-0.4-3.9-0.7c-1.9-0.5-3.9-1.1-5.7-0.5c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8c-1,0.7-2.2,1.2-3.5,1.6 c-1.9,0.7-3.9,1.4-5,3c-1.1,1.6-1.2,3.7-1.3,5.7c-0.1,1.3-0.1,2.7-0.5,3.9c-0.4,1.1-1.1,2.2-1.8,3.3c-1.1,1.7-2.3,3.5-2.3,5.5 c0,2,1.2,3.8,2.3,5.5c0.8,1.1,1.5,2.2,1.8,3.3c0.1,0.2,0.1,0.5,0.2,0.8C24,58.9,23.1,59,22.2,58.9z M26.9,58.2 c-0.3,0.1-0.6,0.2-0.9,0.2c-0.1-0.3-0.1-0.6-0.2-0.8c-0.4-1.2-1.2-2.4-1.9-3.5c-1.1-1.6-2.2-3.2-2.2-5c0-1.7,1.1-3.4,2.2-5 c0.8-1.1,1.5-2.3,1.9-3.5c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8 c1.1-0.8,2-1.9,2.8-3c1.2-1.6,2.4-3,4-3.5c0.4-0.1,0.9-0.2,1.4-0.2c1.2,0,2.4,0.4,3.8,0.7c1.4,0.4,2.8,0.8,4.2,0.8 c1.4,0,2.8-0.4,4.2-0.8c0.3-0.1,0.6-0.2,0.9-0.2c0.1,0.3,0.1,0.6,0.2,0.8c0.3,0.9,0.8,1.8,1.3,2.6c0,0,0,0,0,0 c-0.8,0.2-1.7,0.4-2.5,0.4c-1.2,0-2.6-0.4-3.9-0.7c-1.9-0.5-3.9-1.1-5.7-0.5c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8 c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3c-1.1,1.6-1.2,3.7-1.3,5.7c-0.1,1.3-0.1,2.7-0.5,3.9c-0.4,1.1-1.1,2.2-1.8,3.3 C26,49.2,24.8,51,24.8,53C24.8,54.9,25.9,56.6,26.9,58.2C27,58.2,27,58.2,26.9,58.2C27,58.2,26.9,58.2,26.9,58.2z M28,57.9 c-1.1-1.6-2.2-3.2-2.2-4.9c0-1.7,1.1-3.4,2.2-5c0.8-1.1,1.5-2.3,1.9-3.5c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1 c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8c1.1-0.8,2-1.9,2.8-3c1.2-1.6,2.4-3,4-3.5c0.4-0.1,0.9-0.2,1.4-0.2 c1.2,0,2.4,0.4,3.8,0.7c1.4,0.4,2.8,0.8,4.2,0.8c1,0,2.1-0.2,3.1-0.5c0.7,1.1,1.5,2.2,1.8,3.4c-0.3,0-0.6,0.1-0.9,0.1 c-1.2,0-2.6-0.4-3.9-0.7c-1.9-0.5-3.9-1.1-5.7-0.5c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8c-1,0.7-2.2,1.2-3.5,1.6 c-1.9,0.7-3.9,1.4-5,3c-1.1,1.6-1.2,3.7-1.3,5.7c-0.1,1.3-0.1,2.7-0.5,3.9c-0.4,1.1-1.1,2.2-1.8,3.3C30,53.2,28.8,55,28.8,57 c0,0.3,0,0.5,0.1,0.7C28.6,57.8,28.3,57.9,28,57.9z M55.6,47.8c-1,1.3-2.7,2-4.6,2.7c-1.3,0.5-2.7,1-3.8,1.8 c-0.1,0.1-0.1,0.1-0.2,0.2c0,0,0,0,0,0c0.1-0.4,0.3-0.8,0.6-1.2c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8c0.1-0.1,0.1-0.1,0.2-0.2 C56,47,55.8,47.4,55.6,47.8z M57.2,38.5c-0.4,1.3-0.5,2.7-0.5,4.2c0,0.8-0.1,1.5-0.1,2.2c-0.4,0.4-0.8,0.8-1.2,1.1 c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3c-0.7,0.9-1,2-1.1,3.1c-0.4,0.5-0.8,1-1.2,1.5c-1.1,1.4-2.1,2.7-3.4,3.3 c0.4-0.7,0.7-1.3,1-2c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7c1.3-0.5,2.7-1,3.8-1.8 c1.1-0.8,2-1.9,2.8-3c1.1-1.4,2.1-2.7,3.4-3.3c0,0,0,0,0,0C57.8,37.1,57.5,37.8,57.2,38.5z M59.2,35c0,0-0.1,0.1-0.1,0.1 c-0.2,0-0.4,0.1-0.6,0.2c-1.9,0.6-3.2,2.3-4.5,3.9c-0.9,1.1-1.7,2.1-2.6,2.8c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3 c-1.1,1.6-1.2,3.7-1.3,5.7c-0.1,1.3-0.1,2.7-0.5,3.9c-0.3,0.9-0.9,1.8-1.5,2.7c-1.3,0.1-2.7-0.3-4.2-0.7c-0.2-0.1-0.4-0.1-0.5-0.1 c0.4-0.7,0.8-1.4,1.3-2c0.8-1.1,1.5-2.3,1.9-3.5c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7 c1.3-0.5,2.7-1,3.8-1.8c1.1-0.8,2-1.9,2.8-3c1.2-1.6,2.4-3,4-3.5c0.4-0.1,0.9-0.2,1.4-0.2c1.2,0,2.4,0.4,3.8,0.7 c0.2,0.1,0.4,0.1,0.5,0.1C60.1,33.6,59.6,34.3,59.2,35z M60.2,31.8c-1.9-0.5-3.9-1.1-5.7-0.5c-1.9,0.6-3.2,2.3-4.5,3.9 c-0.9,1.1-1.7,2.1-2.6,2.8c-1,0.7-2.2,1.2-3.5,1.6c-1.9,0.7-3.9,1.4-5,3c-1.1,1.6-1.2,3.7-1.3,5.7c-0.1,1.3-0.1,2.7-0.5,3.9 c-0.4,1.1-1.1,2.2-1.8,3.3c-0.5,0.8-1,1.6-1.4,2.4c-0.9-0.2-1.7-0.4-2.6-0.4c-0.4,0-0.8,0-1.2,0.1c0-0.2,0-0.4,0-0.6 c0-1.7,1.1-3.4,2.2-5c0.8-1.1,1.5-2.3,1.9-3.5c0.4-1.3,0.5-2.7,0.5-4.2c0.1-2,0.2-3.8,1.1-5.1c1-1.3,2.7-2,4.6-2.7 c1.3-0.5,2.7-1,3.8-1.8c1.1-0.8,2-1.9,2.8-3c1.2-1.6,2.4-3,4-3.5c0.4-0.1,0.9-0.2,1.4-0.2c1.2,0,2.4,0.4,3.8,0.7 c1.4,0.4,2.8,0.8,4.2,0.8c0.4,0,0.8,0,1.2-0.1c0,0.2,0,0.4,0,0.6c0,0.7-0.2,1.3-0.4,1.9C60.7,31.9,60.4,31.8,60.2,31.8z"></path>
+                            </svg>
+                        </div>
+                        <a id="menu-trigger"
+                           class="menu-trigger btn btn-round btn-outline hover-anim hover-secondary"
+                           href="#0"><em></em><i class="ph ph-list icon-burger"></i><i
+                                class="ph ph-x icon-close"></i></a>
+                        <div id="menu" class="header__menu">
+                            <nav class="menu__container">
+                                <ul class="navigation">
+                                    <li><a id="about-trigger"
+                                           class="btn btn-default btn-navigation hover-anim hover-secondary"
+                                           href="#0"><em></em><span class="btn-caption">درباره من</span></a></li>
+                                    <li><a id="contact-trigger"
+                                           class="btn btn-default btn-navigation hover-anim hover-secondary"
+                                           href="#0"><em></em><span
+                                            class="btn-caption">راه ارتباطی</span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="intro__content">
+                        <div id="headline" class="headline">
+                            <p class="headline__subtitle">👋 Let's meet</p>
+                            <h1 class="headline__title"><span class="colored"></span><span
+                                    class="colored">{{ user.get_full_name }}</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="intro__bottomline d-flex flex-column flex-xl-row justify-content-xl-between">
+                        <div class="bottomline__left"><a id="about-trigger-bottom" href="#0"
+                                                         class="btn btn-cta"><span
+                                class="cta__caption">بیشتر ببین</span><span
+                                class="cta__elipce btn-outline hover-anim hover-secondary"><em></em><svg
+                                xmlns="http://www.w3.org/2000/svg" width="25px" height="14px" viewbox="0 0 25 14"
+                                style="enable-background:new 0 0 25 14;"><path
+                                d="M24.8,7.5l-6.3,6.3c-0.3,0.3-0.7,0.3-1,0c-0.3-0.3-0.3-0.7,0-1l0,0l5.1-5.1H0.7C0.3,7.7,0,7.4,0,7c0-0.4,0.3-0.7,0.7-0.7 h21.9l-5.1-5.1c-0.3-0.3-0.3-0.7,0-1s0.7-0.3,1,0l6.3,6.3C25.1,6.8,25.1,7.2,24.8,7.5C24.8,7.5,24.8,7.5,24.8,7.5z"></path></svg></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 main__media fullheight">
+                    <div class="media__content">
+                        <div class="video-background">
+                            <video id="main-video" preload="auto" autoplay="autoplay" loop="loop" muted="muted"
+                                   poster="/static/img/backgrounds/960x1080_v1.webp">
+                                <source type="video/mp4" src="/static/video/video.mp4"></source>
+                                <source type="video/webm" src="/static/video/video.html"></source>
+                                <source type="video/ogv" src="/static/video/video-2.html"></source>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="about" class="inner about">
     <div class="inner__controls d-flex"><a id="about-close"
                                            class="btn btn-default btn-outline hover-anim hover-secondary"
@@ -54,117 +120,25 @@
                         <div class="inner__container">
                             <div class="content-block">
                                 <span class="section__subtitle"><h3>😎 درباره من</h3></span>
-                                <h4>من عباس قلی پور <span class="colored">  یک برنامه نویس بک اند هستم </span><br>بیاید
-                                    بیشتر با من
-                                    آشنا بشید</h4>
-                                <p class="section__text">
-                                    من کار خودم رو با زبان پایتون شروع کردم و به ساخت سایت علاقه داشتم پس در ادامه کار
-                                    به
-                                    یادگیری فریمورک جنگو و استفاده از اون برای ساخت ایده هام بهره گرفتم.
-                                    برای سرعت بخشیدن به صفحات وب سایت های خودم تا حد امکان سعی کردم که از کد های کوتاه و
-                                    تمیز
-                                    استفاده کنم ولی باید برای تسریع بخشیدن به این کار تکنولوژی دیگری هم یاد میگرفتم.
-                                    اسم این تکنولوژی RestApi بود و اتصال بین برنامه من و فرانت اند صفحات رو برقرار میکرد
+                                <h4>{{ person.short_description }}</h4>
+                                <p class="section__text">{{ person.description }}
                                 </p>
                             </div>
                         </div>
-                        {#                        <div class="inner__container">#}
-                        {#                            <div class="content-block">#}
-                        {#                                <div class="container-fluid p-0">#}
-                        {#                                    <div class="row g-2 align-items-stretch">#}
-                        {#                                        <div class="col-12 col-md-6 feature">#}
-                        {#                                            <div class="feature__item card">#}
-                        {#                                                <div class="feature__descr">#}
-                        {#                                                    <h4 class="feature__title">Frontend<br>توسعه</h4>#}
-                        {#                                                    <p class="small feature__text">آیا من دیوانه شده ام؟ من می ترسم#}
-                        {#                                                        اینطور باشد، اما بگذارید چیزی به شما بگویم، معمولاً بهترین افراد#}
-                        {#                                                        هستند.</p>#}
-                        {#                                                </div>#}
-                        {#                                                <div class="feature__image"><img#}
-                        {#                                                        src="/static/img/features/1200x900_f01.webp"#}
-                        {#                                                        alt="Helio Feature Image"></div>#}
-                        {#                                            </div>#}
-                        {#                                        </div>#}
-                        {#                                        <div class="col-12 col-md-6 feature">#}
-                        {#                                            <div class="feature__item card">#}
-                        {#                                                <div class="feature__descr">#}
-                        {#                                                    <h4 class="feature__title">نام تجاری<br>هویت</h4>#}
-                        {#                                                    <p class="small feature__text">آیا من دیوانه شده ام؟ من می ترسم#}
-                        {#                                                        اینطور باشد، اما بگذارید چیزی به شما بگویم، معمولاً بهترین افراد#}
-                        {#                                                        هستند.</p>#}
-                        {#                                                </div>#}
-                        {#                                                <div class="feature__image"><img#}
-                        {#                                                        src="/static/img/features/1200x900_f02.webp"#}
-                        {#                                                        alt="Helio Feature Image"></div>#}
-                        {#                                            </div>#}
-                        {#                                        </div>#}
-                        {#                                        <div class="col-12 col-md-6 feature">#}
-                        {#                                            <div class="feature__item card">#}
-                        {#                                                <div class="feature__descr">#}
-                        {#                                                    <h4 class="feature__title">دیجیتال<br>هنر</h4>#}
-                        {#                                                    <p class="small feature__text">آیا من دیوانه شده ام؟ من می ترسم#}
-                        {#                                                        اینطور باشد، اما بگذارید چیزی به شما بگویم، معمولاً بهترین افراد#}
-                        {#                                                        هستند.</p>#}
-                        {#                                                </div>#}
-                        {#                                                <div class="feature__image"><img#}
-                        {#                                                        src="/static/img/features/1200x900_f03.webp"#}
-                        {#                                                        alt="Helio Feature Image"></div>#}
-                        {#                                            </div>#}
-                        {#                                        </div>#}
-                        {#                                        <div class="col-12 col-md-6 feature">#}
-                        {#                                            <div class="feature__item card">#}
-                        {#                                                <div class="feature__descr">#}
-                        {#                                                    <h4 class="feature__title">بازار یابی<br>راه حل ها</h4>#}
-                        {#                                                    <p class="small feature__text">آیا من دیوانه شده ام؟ من می ترسم#}
-                        {#                                                        اینطور باشد، اما بگذارید چیزی به شما بگویم، معمولاً بهترین افراد#}
-                        {#                                                        هستند.</p>#}
-                        {#                                                </div>#}
-                        {#                                                <div class="feature__image"><img#}
-                        {#                                                        src="/static/img/features/1200x900_f04.webp"#}
-                        {#                                                        alt="Helio Feature Image"></div>#}
-                        {#                                            </div>#}
-                        {#                                        </div>#}
-                        {#                                    </div>#}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
                         <div class="inner__container">
                             <div class="content-block">
-                                <div class="show-skillbar">
-                                    <div class="skillbar" data-percent="70">
-                                        <span class="skillbar-title tools">پایتون</span>
-                                        <p class="skillbar-bar"></p>
-                                        <span class="skill-bar-percent tools"></span>
+                                {% for skill in skills %}
+                                    <div class="show-skillbar">
+                                        <div class="skillbar" data-percent="{{ skill.percent }}">
+                                            <span class="skillbar-title tools">{{ skill.title }}</span>
+                                            <p class="skillbar-bar"></p>
+                                            <span class="skill-bar-percent tools"></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="show-skillbar">
-                                    <div class="skillbar" data-percent="65">
-                                        <span class="skillbar-title">جنگو</span>
-                                        <p class="skillbar-bar"></p>
-                                        <span class="skill-bar-percent"></span>
-                                    </div>
-                                </div>
-                                <div class="show-skillbar">
-                                    <div class="skillbar" data-percent="43">
-                                        <span class="skillbar-title">RestApi</span>
-                                        <p class="skillbar-bar"></p>
-                                        <span class="skill-bar-percent"></span>
-                                    </div>
-                                </div>
+                                {% endfor %}
+
                             </div>
                         </div>
-                        {#                        <div class="inner__container">#}
-                        {#                            <div class="content-block">#}
-                        {#                                <div class="fullwidth-container">#}
-                        {#                                    <div class="showreel showreel-image-1">#}
-                        {#                                        <div class="showreel__button"><a id="inner-video-trigger"#}
-                        {#                                                                         class="btn btn-round-onesize btn-filled hover-anim hover-anim-onesize hover-accent"#}
-                        {#                                                                         href="https://vimeo.com/65036292"><em></em><i#}
-                        {#                                                class="ph ph-play"></i></a></div>#}
-                        {#                                    </div>#}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
                     </div>
                 </div>
                 <div class="col-12 col-xl-6 inner__media">
@@ -176,7 +150,6 @@
         </div>
     </div>
 </section>
-
 <section id="contact" class="inner contact">
     <div class="inner__controls d-flex"><a id="contact-close"
                                            class="btn btn-default btn-outline hover-anim hover-secondary"
@@ -194,9 +167,10 @@
                                         <div class="col-12 col-md-6 contactdata">
                                             <h6 class="contactdata__title">محل</h6>
                                             <div class="contactdata__descr"><p class="small"><a class="contact-link"
-                                                                                                href="https://maps.app.goo.gl/rx3hsu8AzYkjNjwM8"
-                                                                                                target="_blank">لرستان
-                                                <br>خرم آباد</a></p></div>
+                                                                                                href="{{ contact.map }}"
+                                                                                                target="_blank">{{ contact.country }}
+                                                <br>{{ contact.state }}
+                                                <br>{{ contact.city }}</a></p></div>
                                         </div>
                                         <div class="col-12 col-md-6 contactdata">
                                             <h6 class="contactdata__title">بیا دنبالم</h6>
@@ -204,12 +178,12 @@
                                                 <ul class="contactdata__socials">
                                                     <li>
                                                         <i class="ph ph-dribbble-logo"></i><a class="contact-link"
-                                                                                              href="https://t.me/abasghlipour"
+                                                                                              href="{{ contact.telegram }}"
                                                                                               target="_blank">تلگرام</a>
                                                     </li>
                                                     <li>
                                                         <i class="ph ph-instagram-logo"></i><a class="contact-link"
-                                                                                               href="https://www.instagram.com/abasghlipour?igsh=MmVlMjlkMTBhMg=="
+                                                                                               href="{{ contact.instagram }}"
                                                                                                target="_blank">اینستاگرام</a>
                                                     </li>
                                                 </ul>
@@ -218,62 +192,19 @@
                                         <div class="col-12 col-md-6 contactdata">
                                             <h6 class="contactdata__title">به من زنگ بزن</h6>
                                             <div class="contactdata__descr"><p class="small"><a class="contact-link"
-                                                                                                href="tel:+989369401921">0936-940-1921
+                                                                                                href="tel:{{ contact.phone }}">{{ contact.phone|slice:'0:4' }}-{{ contact.phone|slice:'4:7' }}-{{ contact.phone|slice:'7:11' }}
                                             </a></p></div>
                                         </div>
                                         <div class="col-12 col-md-6 contactdata">
                                             <h6 class="contactdata__title">یک خط بنویس</h6>
                                             <div class="contactdata__descr"><p class="small"><a class="contact-link"
-                                                                                                href="mailto:abasghlipour@gmail.com?subject=Message%20from%20your%20site">abasghlipour@gmail.com</a>
+                                                                                                href="mailto:{{ contact.email }}?subject=Message%20from%20your%20site">{{ contact.email }}</a>
                                             </p></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {#                        <div class="inner__container">#}
-                        {#                            <div class="content-block">#}
-                        {#                                <h3>فقط بگو<span class="colored">سلام</span>!</h3>#}
-                        {#                                <p class="block__text">می خواهید درباره ما بیشتر بدانید، در مورد پروژه خود به ما بگویید#}
-                        {#                                    یا فقط برای گفتن سلام؟ به من خط بزنید تا در اسرع وقت برگردم.</p>#}
-                        {#                                <div class="form-container">#}
-                        {#                                    <div class="reply-group">#}
-                        {#                                        <i class="ph ph-smiley reply-group__icon"></i>#}
-                        {#                                        <p class="reply-group__title">انجام شده!</p>#}
-                        {#                                        <span class="reply-group__text">به خاطر پیغامتون ممنون. در اسرع وقت برمیگردم</span>#}
-                        {#                                    </div>#}
-                        {#                                    <form class="form contact-form" id="contact-form">#}
-                        {#                                        <input type="hidden" name="project_name"#}
-                        {#                                               value="Helio - Coming Soon and Landing Page Template"><input#}
-                        {#                                            type="hidden" name="admin_email" value="support@mixdesign.club"><input#}
-                        {#                                            type="hidden" name="form_subject" value="Contact Form Message">#}
-                        {#                                        <div class="container-fluid p-0">#}
-                        {#                                            <div class="row gx-2">#}
-                        {#                                                <div class="col-12 col-md-6"><input type="text" name="Name"#}
-                        {#                                                                                    placeholder="اسم شما*" required>#}
-                        {#                                                </div>#}
-                        {#                                                <div class="col-12 col-md-6"><input type="text" name="Company"#}
-                        {#                                                                                    placeholder="نام شرکت"></div>#}
-                        {#                                                <div class="col-12 col-md-6"><input type="email" name="E-mail"#}
-                        {#                                                                                    placeholder="آدرس پست الکترونیکی*"#}
-                        {#                                                                                    required></div>#}
-                        {#                                                <div class="col-12 col-md-6"><input type="tel" name="Phone"#}
-                        {#                                                                                    placeholder="شماره تلفن*" required>#}
-                        {#                                                </div>#}
-                        {#                                                <div class="col-12"><textarea name="Message" placeholder="چند کلمه*"#}
-                        {#                                                                              required></textarea></div>#}
-                        {#                                                <div class="col-12">#}
-                        {#                                                    <button class="btn btn-default btn-filled hover-anim hover-accent"#}
-                        {#                                                            type="submit"><em></em><i#}
-                        {#                                                            class="ph ph-paper-plane"></i><span class="btn-caption">ارسال</span>#}
-                        {#                                                    </button>#}
-                        {#                                                </div>#}
-                        {#                                            </div>#}
-                        {#                                        </div>#}
-                        {#                                    </form>#}
-                        {#                                </div>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
                     </div>
                 </div>
                 <div class="col-12 col-xl-6 inner__media">
@@ -285,35 +216,6 @@
         </div>
     </div>
 </section>
-{#<div id="notify" class="popup notify">#}
-{#    <div class="popup__container">#}
-{#        <div class="popup__content block-rounded-s">#}
-{#            <a href="#0" id="notify-close" class="popup-close"><i class="ph ph-x"></i></a>#}
-{#            <div class="popup-title">#}
-{#                <p class="popup-title__title">در جدیدترین ما مشترک شوید<span class="colored">به روز رسانی ها</span></p>#}
-{#                <p class="popup-title__text">در خبرنامه ما مشترک شوید و اولین نفری باشید که از پروژه‌ها، ایده‌ها و#}
-{#                    کارهای جدید ما مطلع می‌شوید</p>#}
-{#            </div>#}
-{#            <div class="form-container">#}
-{#                <div class="reply-group subscription-ok">#}
-{#                    <i class="ph ph-smiley reply-group__icon"></i>#}
-{#                    <p class="reply-group__title txt-light">انجام شده!</p>#}
-{#                    <span class="reply-group__text">با تشکر برای اشتراک!</span>#}
-{#                </div>#}
-{#                <div class="reply-group subscription-error">#}
-{#                    <i class="ph ph-smiley-nervous reply-group__icon"></i>#}
-{#                    <p class="reply-group__title">اوه!</p>#}
-{#                    <span class="reply-group__text">مشکلی پیش آمد. لطفاً بعداً دوباره امتحان کنید.</span>#}
-{#                </div>#}
-{#                <form class="form notify-form form-light">#}
-{#                    <input type="email" placeholder="ایمیل شما" required>#}
-{#                    <button class="btn btn-default btn-filled hover-anim hover-accent" type="submit"><em></em><i#}
-{#                            class="ph ph-paper-plane"></i><span class="btn-caption">ارسال</span></button>#}
-{#                </form>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="pswp__bg"></div>
     <div class="pswp__scroll-wrap">
