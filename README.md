@@ -1,2 +1,2 @@
 # my_shop
-this is a shop project 
+This is my resume project
